@@ -1,11 +1,13 @@
 gapi.load("client", loadClient);
 var pageToken = '';
+const videoList = document.getElementById('videoListContainer');
 document.querySelector("#search").addEventListener("click",(e)=>{
     const userInput = document.querySelector("#user_input").value;
     console.log(userInput)
-    // e.preventDefault()
-    document.querySelector("#user_input").value="";
+    e.preventDefault()
+    // document.querySelector("#user_input").value="";
     execute(userInput);
+
 })
 function loadClient() {
     gapi.client.setApiKey("AIzaSyAB5h6vk3xw2t7y91atL-xQqBFnqA5PoEU");
@@ -16,7 +18,7 @@ function loadClient() {
 function paginate(e, obj) {
     e.preventDefault();
     pageToken = obj.getAttribute('data-id');
-    // execute();
+    execute(userInput);
 }
 function execute(userInput="youtube") {
     const searchString = userInput;
