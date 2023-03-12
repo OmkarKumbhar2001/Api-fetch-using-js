@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./Style/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" />
     <title>Document</title>
 </head>
 <body>
@@ -17,14 +18,18 @@
         </div>
         <div class="search_form">
             <div>
-                <input type="text" placeholder="Serach">
+                <input type="text" value="" id="user_input" placeholder="Serach">
                <div class="form_button">
-                   <button id="search"><img src="./Assets/img/search.png" alt="" srcset="search img"></button>
+                   <button id="search"><img src="./Assets/img/search.png" alt=""></button>
                 </div>
             </div>
             
         </div>
     </section>
+    <div id="videoListContainer"></div>
+    <script src="https://apis.google.com/js/api.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
     <script src="./JS/index.js"></script>
 </body>
 </html>

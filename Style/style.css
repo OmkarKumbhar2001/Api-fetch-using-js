@@ -46,9 +46,9 @@ nav{
     border-radius: 10rem;
     border: none;
     outline: none;
-    padding-left:1rem;
     font-weight: 1.5rem;
     letter-spacing: 0.1rem;
+    padding-left:1rem;
 }
 #landing_page .search_form input::placeholder{
     letter-spacing: 0.1rem;
