@@ -1,0 +1,76 @@
+:root{
+    --main_background:black;
+    --main_text:#fff;
+    --logo:rgb(35, 160, 35);
+    --search_button:rgb(80 143 226);
+}
+*{
+    padding: 0rem;
+    margin: 0rem;
+    box-sizing: border-box;
+    
+}
+body{
+    background-color: var(--main_background);
+}
+nav{
+    height: 10vh;
+    color: var(--logo);
+}
+#landing_page{
+    color: var(--main_text);
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 2rem;
+
+}
+#landing_page .search_form{
+    width: 50%;
+}
+#landing_page .land_img img{
+    width: 50%;
+    position: relative;
+    bottom: -2rem;
+}
+#landing_page .land_img {
+    display: flex;
+    justify-content: center;
+    
+}
+#landing_page .search_form input{
+    height: 3.3rem;
+    width: 100%;
+    border-radius: 10rem;
+    border: none;
+    outline: none;
+    padding-left:1rem;
+    font-weight: 1.5rem;
+    letter-spacing: 0.1rem;
+}
+#landing_page .search_form input::placeholder{
+    letter-spacing: 0.1rem;
+    text-align: left;
+    padding-left: 1rem;
+}
+#landing_page .search_form button{
+    border-radius: 100%;
+    padding: 0.5rem;
+    width: 3rem;
+    border: none;
+    background-color: var(--search_button);
+    margin-right: 0.3rem;
+    cursor: pointer;
+}
+#landing_page .search_form img{
+    width: 1.5rem;
+    height: auto;
+}
+.form_button{
+    position: relative;
+    top:-3rem;
+    float: right;
+    width: auto;
+}
