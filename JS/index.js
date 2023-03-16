@@ -10,7 +10,7 @@ document.querySelector("#search").addEventListener("click",(e)=>{
 
 })
 function loadClient() {
-    gapi.client.setApiKey("AIzaSyAB5h6vk3xw2t7y91atL-xQqBFnqA5PoEU");
+    gapi.client.setApiKey("Enter your google api key");
     return gapi.client.load("https://www.googleapis.com/discovery/v1/apis/youtube/v3/rest")
         .then(function() { console.log("GAPI client loaded for API"); },
                 function(err) { console.error("Error loading GAPI client for API", err); });
